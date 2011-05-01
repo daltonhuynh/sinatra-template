@@ -1,0 +1,33 @@
+doctype 5
+
+/if lt IE 7
+  html.no-js.ie6(lang="en")
+/if IE 7
+  html.no-js.ie7(lang="en")
+/if IE 8
+  html.no-js.ie8(lang="en")
+/if IE 9
+  html.no-js.ie9(lang="en")
+
+html.no-js lang="en"
+  head
+    meta charset="utf-8"
+   	
+    title Template
+    link rel="stylesheet" href="/stylesheets/styles.css"
+    
+    script type="text/javascript" src="/javascripts/jquery-1.5.2.min.js")
+    script type="text/javascript" src="/javascripts/modernizr-1.7.min.js")
+
+    script type="text/javascript" src="/javascripts/app.js")
+  body
+    #container
+      header
+        #nav
+          #nav-container
+            h3#logo
+              a href="/" Template
+            #log-up
+      main
+      	== slim :index
+      footer 
